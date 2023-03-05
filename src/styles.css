@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(to right, #5e2c7f, #121212);
+  color: #ffffff;
+}
+.hide {
+  display: none;
+}
+.line {
+  width: 200px;
+  height: 20px;
+  border-bottom: 1px solid #ffffff;
+  margin: 20px 0;
+}
+.btnUser {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background-size: 50px;
+  background-image: url("/src/img/btnUser.png");
+  display: block;
+  cursor: pointer;
+}
+
+#userWrap .btnLogout {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 5%;
+  color: #ffffff;
+  background-color: #121212;
+}
+#logInWarp {
+  text-align: center;
+}
+
+#logInWarp .userName {
+  width: 300px;
+  height: 50px;
+}
+
+#logInWarp .btnLogin {
+  width: 150px;
+  height: 50px;
+  background-color: #121212;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5%;
+}
+
+#todoWrap {
+  opacity: 0.8;
+  box-shadow: 3px 3px #ffffff, -1em 0 0.4em #ffffff;
+  text-align: center;
+  border-radius: 5%;
+  background: linear-gradient(130deg, #5e2c7f, #121212);
+  position: fixed;
+  width: 450px;
+  top: 20px;
+  right: 20px;
+}
+
+#todoWrap #toDoInputWrap .todoInput {
+  width: 300px;
+  height: 50px;
+}
+
+#todoWrap #toDoListWrap ul li {
+  font-size: 20px;
+  text-align: left;
+  height: 30px;
+  padding: 10px;
+  list-style: none;
+}
+
+#todoWrap #toDoListWrap ul li .checkIcon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
