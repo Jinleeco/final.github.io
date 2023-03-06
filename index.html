@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Soyoung's Home</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-  <body>
-    <div class="btnUser" id="btnUser"></div>
-    <div id="userWrap" class="hide">
-      <div id="userListWrap">
-        <span class="loginTo">Login To →</span>
-        <div class="userList" id="userList">
-          <ul></ul>
-        </div>
-        <div class="line"></div>
-        <button type="button" class="btnLogout" id="btnLogout">Logout</button>
-      </div>
+<head>
+  <title>Soyoung's Home</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+<div class="btnUser" id="btnUser"></div>
+<div id="userWrap" class="hide">
+  <span class="loginTo">Login To →</span>
+  <div class="userList" id="userList">
+    <ul></ul>
+  </div>
+  <div class="line"></div>
+  <button type="button" class="btnLogout" id="btnLogout">Logout</button>
+</div>
+<div id="logInWarp">
+  <h1 id="greet">Hello, Please Login</h1>
+  <form id="userForm">
+    <input
+            type="text"
+            class="userName"
+            name="userName"
+            id="userName"
+            placeholder="Enter Your Name"
+    />
+    <button type="submit" class="btnLogin" id="btnLogin">Login</button>
+  </form>
+</div>
+<div id="todoWrap">
+  <h1 id="todoUser">To-Do List</h1>
+  <form id="todoForm">
+    <div id="todoInputWrap">
+      <input type="text" class="hide"/>
+      <input
+              type="text"
+              name="toDoInput"
+              class="todoInput"
+              id="todoInput"
+              placeholder="Enter To-Do and Press Enter Key"
+      />
     </div>
-    <div id="logInWarp">
-      <h1 id="greet">Hello, Please Login</h1>
-      <form id="userForm">
-        <input
-          type="text"
-          class="userName"
-          name="userName"
-          id="userName"
-          placeholder="Enter Your Name"
-        />
-        <button type="submit" class="btnLogin" id="btnLogin">Login</button>
-      </form>
-    </div>
-    <div id="todoWrap">
-      <h1 id="todoUser">To-Do List</h1>
-      <div id="toDoInputWrap">
-        <input
-          type="text"
-          name="toDoInput"
-          class="todoInput"
-          id="todoInput"
-          placeholder="Enter To-Do and Press Enter Key"
-        />
-      </div>
-      <div id="toDoListWrap">
-        <ul>
-          <li>
-            <img src="/src/img/check.png" class="checkIcon" /> 아침 일찍
-            일어나기
-          </li>
-          <li>
-            <img src="/src/img/check.png" class="checkIcon" />침대 정리 하기
-          </li>
-        </ul>
-      </div>
-    </div>
-    <script src="src/index.js"></script>
-  </body>
+  </form>
+  <div id="todoListWrap">
+    <ul></ul>
+  </div>
+</div>
+<script src="src/index.js"></script>
+</body>
 </html>

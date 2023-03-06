@@ -1,9 +1,14 @@
 body {
   background: linear-gradient(to right, #5e2c7f, #121212);
   color: #ffffff;
+  margin:0;
+  padding:0;
 }
 .hide {
   display: none;
+}
+.active {
+  background-color: #121212;
 }
 .line {
   width: 200px;
@@ -16,9 +21,29 @@ body {
   height: 50px;
   margin: 20px;
   background-size: 50px;
-  background-image: url("/src/img/btnUser.png");
+  background-image: url("img/btnUser.png");
   display: block;
   cursor: pointer;
+}
+#userWrap {
+  margin: 20px;
+  width:200px;
+  overflow: hidden;
+}
+
+#userWrap #userList ul{
+  margin:0;
+  padding:0;
+  margin-top: 10px;
+}
+
+#userWrap #userList ul li{
+  list-style: none;
+  width:200px;
+  vertical-align: middle;
+  padding:10px;
+  cursor: pointer;
+
 }
 
 #userWrap .btnLogout {
@@ -59,12 +84,12 @@ body {
   right: 20px;
 }
 
-#todoWrap #toDoInputWrap .todoInput {
+#todoWrap #todoInputWrap .todoInput {
   width: 300px;
   height: 50px;
 }
 
-#todoWrap #toDoListWrap ul li {
+#todoWrap #todoListWrap ul li {
   font-size: 20px;
   text-align: left;
   height: 30px;
@@ -72,8 +97,23 @@ body {
   list-style: none;
 }
 
-#todoWrap #toDoListWrap ul li .checkIcon {
+#todoWrap #todoListWrap ul li .checkIcon {
   width: 30px;
   height: 30px;
   vertical-align: middle;
+}
+
+#todoWrap #todoListWrap ul li label {
+  margin-left : 20px;
+}
+
+#todoWrap #todoListWrap ul li label.comp {
+  text-decoration-line: line-through;
+}
+
+.deleteIcon{
+  width:35px;
+  vertical-align: middle;
+  margin-left: 30px;
+  cursor: pointer;
 }
