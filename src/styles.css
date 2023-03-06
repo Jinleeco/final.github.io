@@ -21,7 +21,7 @@ body {
   height: 50px;
   margin: 20px;
   background-size: 50px;
-  background-image: url("img/btnUser.png");
+  background-image: url("/src/img/btnUser.png");
   display: block;
   cursor: pointer;
 }

@@ -49,7 +49,7 @@ if (userNameList != null) {
     li.innerText = element;
     if(element === thisUser){
       let img = document.createElement("img");
-      img.src="src/img/star.png";
+      img.src="/src/img/star.png";
       img.width = 10;
       img.style.marginLeft = "5px";
       li.appendChild(img);
@@ -92,7 +92,7 @@ if(toDoList != null){
     li.appendChild(label);
 
     const img = document.createElement("img");
-    img.src = "src/img/delete.png";
+    img.src = "/src/img/delete.png";
     img.classList.add("deleteIcon");
     img.addEventListener("click", handleBtnDelete);
     li.appendChild(img);
@@ -143,7 +143,7 @@ function userLogin(event) {
   const li = document.createElement("li");
   li.innerText = userName;
   let img = document.createElement("img");
-  img.src="src/img/star.png";
+  img.src="/src/img/star.png";
   img.width = 10;
   img.style.marginLeft = "5px";
   li.appendChild(img);
@@ -180,7 +180,7 @@ function userLogin(event) {
       li.appendChild(label);
 
       const img = document.createElement("img");
-      img.src = "src/img/delete.png";
+      img.src = "/src/img/delete.png";
       img.classList.add("deleteIcon");
       img.addEventListener("click", handleBtnDelete);
       li.appendChild(img);
@@ -226,7 +226,7 @@ function userLogout() {
       li.appendChild(label);
 
       const img = document.createElement("img");
-      img.src = "src/img/delete.png";
+      img.src = "/src/img/delete.png";
       img.classList.add("deleteIcon");
       img.addEventListener("click", handleBtnDelete);
       li.appendChild(img);
@@ -271,7 +271,7 @@ function handleChangeUser(event){
 
   const li = event.target;
   let img = document.createElement("img");
-  img.src="src/img/star.png";
+  img.src="/src/img/star.png";
   img.width = 10;
   img.style.marginLeft = "5px";
   li.appendChild(img);
@@ -304,7 +304,7 @@ function handleChangeUser(event){
       li.appendChild(label);
 
       const img = document.createElement("img");
-      img.src = "src/img/delete.png";
+      img.src = "/src/img/delete.png";
       img.classList.add("deleteIcon");
       img.addEventListener("click", handleBtnDelete);
       li.appendChild(img);
@@ -377,7 +377,7 @@ function handleToDoInput(event){
     li.appendChild(label);
 
     const img = document.createElement("img");
-    img.src = "src/img/delete.png";
+    img.src = "/src/img/delete.png";
     img.classList.add("deleteIcon");
     img.addEventListener("click", handleBtnDelete);
     li.appendChild(img);
